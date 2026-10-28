@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEase - Product Detail</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🛒 ShopEase</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html" class="active">Product Detail</a></li>
+    </ul>
+  </nav>
+
+  <!-- Product Detail -->
+  <section class="product-detail">
+    <div class="product-box">
+
+      <div class="product-image">🎧</div>
+
+      <div class="product-info">
+        <span class="category">Electronics &gt; Headphones</span>
+        <h1>Wireless Noise-Cancelling Headphones</h1>
+        <div class="stars">★★★★★ <span>(1,240 reviews)</span></div>
+
+        <div class="price-block">
+          <span class="big-price">₹2,499</span>
+          <span class="old-price">₹3,999</span>
+          <span class="discount">38% OFF</span>
+        </div>
+
+        <p class="desc">
+          Experience premium sound quality with our flagship wireless headphones.
+          Featuring 40-hour battery life, active noise cancellation, and ultra-soft
+          ear cushions for all-day comfort.
+        </p>
+
+        <ul class="features">
+          <li>✅ 40-Hour Battery Life</li>
+          <li>✅ Active Noise Cancellation</li>
+          <li>✅ Bluetooth 5.3</li>
+          <li>✅ Foldable Design</li>
+          <li>✅ Built-in Microphone</li>
+        </ul>
+
+        <div class="qty-row">
+          <label>Quantity:</label>
+          <button onclick="changeQty(-1)">−</button>
+          <span id="qty">1</span>
+          <button onclick="changeQty(1)">+</button>
+        </div>
+
+        <button class="btn add-cart" onclick="addToCart()">🛒 Add to Cart</button>
+        <a href="index.html" class="btn outline">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
